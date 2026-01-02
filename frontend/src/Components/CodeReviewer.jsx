@@ -5,6 +5,8 @@ import Markdown from "react-markdown";
 import HashLoader from "react-spinners/HashLoader";
 import { GoogleGenAI } from "@google/genai";
 
+
+
 function CodeReviewer() {
   const options = [
     { value: "javascript", label: "JavaScript" },
@@ -23,8 +25,9 @@ function CodeReviewer() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState("");
 
+  const API = import.meta.env.GEMINI_API_KEY;
   const ai = new GoogleGenAI({
-    apiKey: "AIzaSyBesP1XGdTMci8_Ay5NnXGbiPpQ9UqyDXw",
+    apiKey: API,
   });
 
   const darkSelectStyles = {
