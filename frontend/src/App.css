@@ -1,0 +1,48 @@
+@import "tailwindcss";
+.css-css-9lkq5t-control{
+    width: 30%;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+p{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: gray;
+}
+ul li{
+    color: gray;
+    list-style: circle;
+    margin-top: 10px;
+}
+li strong{
+    color: #ffff;
+}
+pre{
+    background-color: #2a2a2d !important; 
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
