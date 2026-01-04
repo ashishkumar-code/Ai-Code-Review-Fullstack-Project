@@ -25,9 +25,9 @@ function CodeReviewer() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState("");
 
-  const API = import.meta.env.GEMINI_API_KEY;
+  
   const ai = new GoogleGenAI({
-    apiKey: API,
+    apiKey: "AIzaSyBesP1XGdTMci8_Ay5NnXGbiPpQ9UqyDXw",
   });
 
   const darkSelectStyles = {

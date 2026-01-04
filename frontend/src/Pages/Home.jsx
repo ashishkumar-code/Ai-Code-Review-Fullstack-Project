@@ -61,18 +61,18 @@ function Home(                                            ) {
             <div className="absolute right-0 top-10 w-48 bg-white border rounded-md shadow-lg z-50">
               <div className="px-4 py-3 border-b">
                 <p className="text-sm text-gray-700">Signed in as</p>
-                <p className="font-semibold truncate !text-black">{user}</p>
+                <p className="font-semibold truncate text-black">{user}</p>
               </div>
 
               <ul className="text-sm">
                 <li
-                  className="px-4 py-2 text-gray-800 border-b border-t hover:bg-gray-100 hover:!text-black cursor-pointer"
+                  className="px-4 py-2 text-gray-800 border-b border-t hover:bg-gray-100 hover:text-black cursor-pointer"
                   onClick={() => navigate("/profile")}
                 >
                   Profile
                 </li>
                 <li
-                  className="px-4 py-2 !text-red-600 hover:bg-gray-100 cursor-pointer"
+                  className="px-4 py-2 text-red-600 hover:bg-gray-100 cursor-pointer"
                   onClick={handleLogout}
                 >
                   Logout
